@@ -1,6 +1,8 @@
 #
 # Copyright (C) 2018-2022 ArrowOS
 #
+# Copyright (C) 2023 RisingOS
+#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -12,11 +14,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common RisingOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_RMX2020
+PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -25,10 +27,15 @@ PRODUCT_MANUFACTURER := realme
 PRODUCT_SYSTEM_MODEL := RMX2020
 PRODUCT_SYSTEM_NAME := RMX2020
 PRODUCT_SYSTEM_DEVICE := RMX2020
-
-# ArrowOS additions
-DEVICE_MAINTAINER := sarthakroy2002
 TARGET_BOOT_ANIMATION_RES := 720
+
+# RisingOS
+TARGET_ENABLE_PRIVAPP_ENFORCEMENT := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+WITH_GMS := true
+RISING_MAINTAINER := Rinto
 
 # Build info
 BUILD_FINGERPRINT := "realme/RMX2020/RMX2020:10/QP1A.190711.020/1651798546:user/release-keys"
