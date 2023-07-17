@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemoveCameraPackages
 
+#Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+   $(DEVICE_PATH)/overlay
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
