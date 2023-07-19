@@ -1,0 +1,37 @@
+[{
+		"repository": "android_vendor_realme_RMX2020",
+		"target_path": "vendor/realme/RMX2020",
+		"branch": "arrow-13.1",
+		"remote": "github"
+	},
+	{
+		"repository": "android_kernel_realme_RMX2020",
+		"target_path": "kernel/realme/RMX2020",
+		"branch": "13.0",
+		"remote": "crdroidandroid"
+	},
+	{
+		"repository": "ArrowOS-Devices/android_vendor_realme_RMX2020-ims",
+		"target_path": "vendor/realme/RMX2020-ims",
+		"branch": "arrow-13.1",
+		"remote": "github"
+	},
+	{
+		"repository": "ArrowOS/android_device_mediatek_sepolicy_vndr",
+		"target_path": "device/mediatek/sepolicy_vndr",
+		"branch": "arrow-13.1",
+		"remote": "github"
+	},
+	{
+		"repository": "LineageOS/android_hardware_mediatek",
+		"target_path": "hardware/mediatek",
+		"branch": "lineage-20",
+		"remote": "github"
+	},
+	{
+		"repository": "ArrowOS-Devices/android_prebuilts_clang_host_linux-x86_clang-r437112",
+		"target_path": "prebuilts/clang/host/linux-x86/clang-r437112",
+		"branch": "master",
+		"remote": "github"
+	}
+]
